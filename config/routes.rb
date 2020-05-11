@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   
   resources :tasks
   
+  get 'toppages/index' => 'toppages#index'
+  
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'

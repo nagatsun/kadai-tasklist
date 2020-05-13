@@ -1,17 +1,10 @@
 <% if logged_in? %>
   <p>ログイン完了ユーザ: <%= current_user.name %></p>
-  
-
-    
-<% end %>   
-      
+<% end %>
 
 
-    
     <h1>タスク一覧</h1>
     
- 
-
 <% if @tasks.any? %>
   <table class="table table-striped">
     <thead>
